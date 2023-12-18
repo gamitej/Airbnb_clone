@@ -1,4 +1,4 @@
 import Navbar from "./Navbar";
-import Container from "./layout/Container";
+import Container from "./Layout/Container";
 
 export { Navbar, Container };
