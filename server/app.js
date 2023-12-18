@@ -12,6 +12,7 @@ const Database = require("./config/database.js");
 // libs
 const cors = require("cors");
 const morgan = require("morgan");
+const useragent = require("express-useragent");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -29,6 +30,12 @@ db.connect().catch((err) =>
 // middlewares
 app.use(cors());
 app.use(morgan("common"));
+app.use(useragent.express());
+
+// user agent info
+app.get("/useragent-info", (req, res) => {
+  res.send(req.useragent);
+});
 
 // server status & port number
 app.get("/server-status", (req, res) => {
