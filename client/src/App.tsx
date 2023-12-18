@@ -1,10 +1,21 @@
-function App() {
+import { Suspense } from "react";
+// router
+import Router from "@/routes/router";
+// libs
+import { Toaster } from "react-hot-toast";
 
+function App() {
   return (
-    <h1 className="text-red-200">
-      Make Changes to App.tsx
-    </h1>
-  )
+    <div>
+      {/* toast notification */}
+      <Toaster position="top-center" reverseOrder={false} />
+
+      {/* react suspense & routes */}
+      <Suspense fallback={<h2>loading...</h2>}>
+        <Router isLoggedIn={false} />
+      </Suspense>
+    </div>
+  );
 }
 
-export default App
+export default App;
