@@ -6,7 +6,7 @@ import { Navigate, useRoutes } from "react-router-dom";
 import ProtectedRoute from "@/auth/ProtectedRoutes";
 
 // lazy
-const Home = lazy(() => import("@/pages/home"));
+const Home = lazy(() => import("@/pages/Home"));
 
 const Router = (props: AppAuth) => {
   const route = useRoutes([
