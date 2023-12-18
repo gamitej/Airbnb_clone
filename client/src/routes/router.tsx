@@ -3,6 +3,7 @@ import { AppAuth } from "@/types/pages";
 import { Navigate, useRoutes } from "react-router-dom";
 
 // auth
+import Login from "@/auth/Login";
 import ProtectedRoute from "@/auth/ProtectedRoutes";
 
 // lazy
@@ -23,7 +24,7 @@ const Router = (props: AppAuth) => {
 
     {
       path: "/auth",
-      //   element: <Auth {...props} />,
+      element: <Login {...props} />,
     },
     {
       path: "*",

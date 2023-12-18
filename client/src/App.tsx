@@ -12,7 +12,7 @@ function App() {
 
       {/* react suspense & routes */}
       <Suspense fallback={<h2>loading...</h2>}>
-        <Router isLoggedIn={false} />
+        <Router isLoggedIn={true} />
       </Suspense>
     </div>
   );

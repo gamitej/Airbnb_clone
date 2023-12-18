@@ -9,7 +9,7 @@ export async function LoginApi(req: any) {
     const { data } = await http.post(`${endpoint}/login`, req);
     return data;
   } catch (error) {
-    return handleError(error);
+    return handleError({});
   }
 }
 
@@ -18,6 +18,6 @@ export async function SignUpApi(req: any) {
     const { data } = await http.post(`${endpoint}/signup`, req);
     return data;
   } catch (error) {
-    return handleError(error);
+    return handleError({});
   }
 }

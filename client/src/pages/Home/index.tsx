@@ -1,6 +1,4 @@
-type HomeProps = {};
-
-const Home = (props: HomeProps) => {
+const Home = () => {
   return <div>Home</div>;
 };
 
