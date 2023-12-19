@@ -2,7 +2,8 @@ import { Suspense } from "react";
 import Router from "@/routes/router";
 import { Toaster } from "react-hot-toast";
 // comp
-import { Navbar } from "./components";
+import { Navbar } from "@/components";
+import Modal from "@/components/Modals/Modal";
 
 function App() {
   return (
@@ -10,6 +11,15 @@ function App() {
       {/* toast notification */}
       <Toaster position="top-center" reverseOrder={false} />
 
+      <Modal
+        title="hello world"
+        isOpen
+        disabled
+        actionLabel="hi"
+        onClose={() => {}}
+        onSubmit={() => {}}
+        secondaryAction={() => {}}
+      />
       {/* navbar */}
       <Navbar />
 
