@@ -19,7 +19,7 @@ class Databse {
     }
   }
 
-  // disconnect to monogodb server
+  // disconnect monogodb server
   async disconnect() {
     try {
       await mongoose.disconnect();

@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import MenuItem from "./MenuItem";
-import Avatar from "../Layout/Avatar";
-// icons
+// icons & utils
+import { Logos } from "@/utils/Logos";
 import { AiOutlineMenu } from "react-icons/ai";
 
 const UserMenu = () => {
@@ -30,10 +30,12 @@ const UserMenu = () => {
         >
           <AiOutlineMenu />
           <div className="hidden md:block">
-            <Avatar />
+            <Logos.Avatar />
           </div>
         </div>
       </div>
+
+      {/* ======MENU ITEM LIST===== */}
       {isOpen && (
         <div
           className="absolute rounded-xl shadow-md

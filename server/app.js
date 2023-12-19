@@ -43,7 +43,7 @@ app.get("/server-status", (req, res) => {
   res.status(200).json({ message: "Server is up and running!" });
 });
 
-// close the connection
+// database disconnection
 process.on("SIGINT", async () => {
   try {
     await db.disconnect();

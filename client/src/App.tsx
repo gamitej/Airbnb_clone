@@ -1,10 +1,8 @@
 import { Suspense } from "react";
-// router
 import Router from "@/routes/router";
-// libs
 import { Toaster } from "react-hot-toast";
 // comp
-import { Navbar } from "@/components";
+import { Navbar } from "./components";
 
 function App() {
   return (

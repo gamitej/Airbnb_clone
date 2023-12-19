@@ -1,5 +1,5 @@
+import { Logos } from "@/utils/Logos";
 import { Container } from "..";
-import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
 
@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="py-4 border-b-[1px]">
         <Container>
           <div className="flex flex-grow items-center justify-between gap-3 md:gap-0">
-            <Logo />
+            <Logos.Logo />
             <Search />
             <UserMenu />
           </div>
