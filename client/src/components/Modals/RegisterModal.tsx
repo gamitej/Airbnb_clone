@@ -18,10 +18,12 @@ const RegisterModal = () => {
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
   };
+  const bodyContent = <div className="flex flex-col gap-4">Hello</div>;
 
   return (
     <Modal
       title="Register"
+      body={bodyContent}
       disabled={isLoading}
       actionLabel="Continue"
       isOpen={registerModal.isOpen}

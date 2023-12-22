@@ -1,1 +1,1 @@
-## New Ts project
+## Airbnb Clone ( React + Typescript )
